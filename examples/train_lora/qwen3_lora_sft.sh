@@ -2,7 +2,7 @@
 
 set -x
 
-MODEL_PATH=Qwen/Qwen3-4B-Instruct-2507
+MODEL_PATH=/pcache-mnt/modelscope/Qwen/Qwen3-4B-Instruct-2507
 
 llamafactory-cli train \
     --model_name_or_path ${MODEL_PATH} \
