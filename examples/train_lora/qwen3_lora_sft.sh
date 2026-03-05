@@ -18,7 +18,7 @@ llamafactory-cli train \
     --max_samples 1000 \
     --preprocessing_num_workers 16 \
     --dataloader_num_workers 4 \
-    --output_dir saves/qwen3-4b/lora/sft \
+    --output_dir /root/workdir/antllm \
     --logging_steps 10 \
     --save_steps 500 \
     --plot_loss \
