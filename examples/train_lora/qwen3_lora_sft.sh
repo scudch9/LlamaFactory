@@ -6,6 +6,7 @@ MODEL_PATH=/mnt/pro/moe-lite/Qwen
 
 llamafactory-cli train \
     --model_name_or_path ${MODEL_PATH} \
+    --local_files_only \
     --trust_remote_code \
     --stage sft \
     --do_train \
