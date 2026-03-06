@@ -2,9 +2,9 @@
 
 set -x
 
-MODEL_PATH=/mnt/pro/moe-lite/Qwen
+MODEL_PATH=/mnt/pro/moe-lite/Qwen3-4B-Instruct-2507
 
-PYTHONPATH="/mnt/pro/moe-lite/Qwen:$PYTHONPATH" llamafactory-cli train \
+llamafactory-cli train \
     --model_name_or_path ${MODEL_PATH} \
     --trust_remote_code \
     --stage sft \
@@ -18,7 +18,7 @@ PYTHONPATH="/mnt/pro/moe-lite/Qwen:$PYTHONPATH" llamafactory-cli train \
     --max_samples 1000 \
     --preprocessing_num_workers 16 \
     --dataloader_num_workers 4 \
-    --output_dir /root/workdir/antllm \
+    --output_dir /mnt/pro/moe-lite/jobs/kimi_k2_sft \
     --logging_steps 10 \
     --save_steps 500 \
     --plot_loss \
