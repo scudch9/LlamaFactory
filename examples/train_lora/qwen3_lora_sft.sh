@@ -2,7 +2,7 @@
 
 set -x
 
-MODEL_PATH=/mnt/pro/moe-lite/Qwen3-4B-Instruct-2507
+MODEL_PATH=/mnt/exp/moe-lite/Qwen
 
 llamafactory-cli train \
     --model_name_or_path ${MODEL_PATH} \
